@@ -20,25 +20,8 @@
 <script>
 export default {
 	name: "HomeRecommend",
-	data (){
-		return {
-			recommendList: [{
-				id: '0001',
-				imgUrl:'http://img1.qunarzz.com/sight/p0/201403/11/c69b992ac22fcf227a04a89bbe597be6.jpg_200x200_9ae54fbd.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			},{
-				id: '0002',
-				imgUrl:'http://img1.qunarzz.com/sight/p0/201403/11/c69b992ac22fcf227a04a89bbe597be6.jpg_200x200_9ae54fbd.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			},{
-				id: '0003',
-				imgUrl:'http://img1.qunarzz.com/sight/p0/201403/11/c69b992ac22fcf227a04a89bbe597be6.jpg_200x200_9ae54fbd.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			}]
-		}
+	props:{
+		recommendList:Array
 	}
 }
 </script>

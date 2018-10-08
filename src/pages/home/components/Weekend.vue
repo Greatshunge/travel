@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">周末去哪儿</div>
 		<ul>
-			<li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+			<li class="item border-bottom" v-for="item of weekendList" :key="item.id">
 				<div class="item-img-wrapper">
 					<img class="item-img" :src="item.imgUrl" />
 				</div>
@@ -19,25 +19,8 @@
 <script>
 export default {
 	name: "HomeWeekend",
-	data (){
-		return {
-			recommendList: [{
-				id: '0001',
-				imgUrl:'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			},{
-				id: '0002',
-				imgUrl:'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			},{
-				id: '0003',
-				imgUrl:'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
-				title:'东门一日游',
-				desc:'提供适合不同年龄层次游客的游乐项目'
-			}]
-		}
+	props:{
+		weekendList:Array
 	}
 }
 </script>
@@ -45,14 +28,13 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl'
 .title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
 .item-img-wrapper
 	height:0
 	overflow: hidden
-	padding-bottom: 33.9%
+	padding-bottom: 37.09%
 	.item-img
   		width:100%
 .item-info
